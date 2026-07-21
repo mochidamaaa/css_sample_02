@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* =================================================
+   1. 色と背景の設定
+   ================================================= */
+.section-color {
+    background-color: #eeeeee; /*セクション全体の背景色（薄いグレー） */
+    background-image: url("images/bg.jpg"); /*背景画像がある場合*/
+    background-size: cover;
+    padding: 20px;
+}
+
+.color-box {
+    color: #ffffff;            /* 文字色：白 */
+    background-color: #007bff; /* 背景色：青 */
+}
+
+/* =================================================
+   2. テキスト・フォントの設定
+   ================================================= */
+.text-custom {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 16px;           /* 文字サイズ */
+    font-weight: bold;         /* 太字 */
+    line-height: 1.8;          /* 行間：1.5〜2.0が推奨 */
+    letter-spacing: 0.05em;    /* 字間：ほんの少し広げる */
+    color: #333333;            /* 文字色：真っ黒を避ける */
+}
+
+/* =================================================
+   3. リストの設定
+   ================================================= */
+.custom-list {
+    list-style: none;          /* デフォルトの「●」を消す */
+    padding-left: 0;           /* 左側の余白をリセット */
+}
+
+.custom-list li {
+    border-bottom: 1px solid #ccc; /* 下線をつける */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* =================================================
+   4. ボックスモデルの設定
+   ================================================= */
+.box-sample {
+    width: 300px;         /* 幅 */
+    height: auto;         /* 高さは中身に合わせる */
+    background-color: #eeeeee;
+    
+    /* 余白の使い分け */
+    padding: 20px;        /* 内側の余白：文字と枠の間 */
+    border: 5px solid #007bff; /* 枠線 */
+    margin: 40px auto;    /* 外側の余白：上下に40px、左右中央揃え */
+}
+
+.display-test {
+    background-color: #ffcccc; /* 薄い赤（色の範囲を分かりやすく） */
+    border: 2px solid #ff0000;  /* 赤い枠線 */
+    
+    /* ボックスモデルの設定 */
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.circle img {
+    border-radius: 50%; /* 角丸で円に */
+    width: 300px;
+    height: auto;
+
+    /*重なりを回避する*/
+    display: block;
+    margin-top: 40px;
+}
+
+.btn-error {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+
+    width: 200px;
+    height: 66px;
+    padding: 20px;
+    margin-top: 30px;
+
+    /*修正例*/
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
